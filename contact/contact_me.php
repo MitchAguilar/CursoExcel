@@ -5,7 +5,7 @@ if(empty($_POST['name'])  		||
    empty($_POST['message'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-	echo "No arguments Provided!";
+	echo "Argumenetos incorrectos!";
 	return false;
    }
 	
@@ -14,7 +14,7 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'youremail@gmail.com'; // ----->>> put your email to receive mails
+$to = 'ma.aguilar@udla.edu.co'; // ----->>> put your email to receive mails
 $email_subject = "Contact form submitted by:  $name";
 $email_body = "You have received a new message. \n\n".
 				  " Here are the details:\n \nName: $name \n ".
